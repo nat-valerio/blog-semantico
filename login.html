@@ -5,27 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        form{
+            width: 550px;
+            margin: auto;
+            border: 5px solid black;
+            padding: 1em;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+        input{
+            width: 400px;
+            border: 2px solid black;
+            background-color: #c2c2c2;
+            height: 30px;
+            border-radius: 5px;
+        }
+        form div{
+            margin-top: 1em;
+        }
+    </style>
 </head>
 <body>
-        <form action="" method="POST">
-                <div>
-                    <label for="usuario">Usuário</label>
-                    <input type="email" placeholder="Digite o usuario" name="usuario" required>
-                </div>
-                <div>
-                    <label for="senha">Senha</label>
-                    <input type="password" placeholder="Digite a senha" name="senha" required>
-                </div>
-                <div>
-                    <button type="submit">Login</button>
-                </div>
-        
-            </form>
-
     <form action="" method="POST">
         <div>
             <label for="usuario">Usuário: </label>
-            <input type="email" placeholder="email">
+            <input type="email" placeholder="Digite o seu email..." name="usuario" required>
+        </div>
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" placeholder="Digite a sua senha..." name="senha" required>
+        </div>
+        <div>
+            <button type="submit">Login</button>
         </div>
 
     </form>
