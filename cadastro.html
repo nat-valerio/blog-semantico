@@ -5,16 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cadastro</title>
+    <style>
+        *{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        form{
+            width: 900px;
+            margin: auto;
+            border: 5px solid black;
+            padding: 1em;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+        input{
+            width: 600px;
+            background-color: #c2c2c2;
+            height: 30px;
+            border-radius: 9px;
+        }
+        form div{
+            margin-top: 1em;
+        }
+        h1, footer{
+            text-align: center;
+            margin-top: 1em;
+        }
+        button{
+            background-color: #6699ff;
+            border: none;
+            margin-left: 330px;
+            padding: 10px 90px;
+            color: snow;
+        }
+        fieldset#selection{
+            margin: auto;
+            width: 50px;
+            text-align: center;
+        }
+        h1{
+            color: #6699ff;  
+        }
+
+    </style>
 </head>
 <body>
 
     <form action="" method="POST">
-            <h1>TELA DE Cadastro</h1> 
+            <h1>Cadastro</h1>
+            <hr>
+            <br> 
             <div>
                 <label for="nomeForm">Nome: </label>
                 <input type="text" id="nomeForm" placeholder="Digite aqui o seu nome..." name="nome">
             </div>
-    
+
             <div>
                 <label for="sobrenomeForm">Sobrenome: </label>
                 <input type="text" id="sobrenomeForm" placeholder="Digite aqui o seu sobrenome..." name="sobrenome">
@@ -22,42 +70,78 @@
     
             <div>
                 <label for="idadeForm">Idade: </label>
-                <input type="number" id="idadeForm" placeholder="Digite aqui a sua idade">
+                <input type="number" id="idadeForm" placeholder="Digite aqui a sua idade...">
+            </div>
+
+            <div>
+                <label for="emailForm">Email: </label>
+                <input type="email" id="emailForm" placeholder="Digite aqui o seu email..."  required>
+            </div>
+
+            <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" placeholder="Digite a sua senha..." name="senha" required>
             </div>
     
             <div>
-                <label for="sexoForm">Sexo: </label>
-                <input type="radio" name="sexo" value="feminino"> Feminino <br>
-                <input type="radio" name="sexo" value="masculino"> Masculino <br>
-                <input type="radio" name="sexo" value="outro"> Não informado <br>
-            </div>
-    
-            <h2>Gêneros favoritos</h2> <br>
-            <div>
-                <input type="checkbox" id="hardrock" name="hardrock">
-                <label for="hardrock">Hard Rock</label>
-            </div> <br>
-    
-            <div>
-                <input type="checkbox" id="powermetal" name="powermetal">
-                <label for="powermetal">Power Metal</label>
-            </div> <br>
-    
-            <div>
-                <input type="checkbox" id="metalcore" name="metalcore">
-                <label for="metalcore">Metal Core</label>
-            </div> <br>
-    
-            <div>
-                <input type="checkbox" id="industrial" name="industrial">
-                <label for="industrial">Industrial Metal</label>
-            </div> <br>
-    
-            <div>
-                <input type="checkbox" id="speed" name="speed">
-                <label for="speed">Speed Metal</label>
-            </div> <br>
+                <fieldset id="selection">
+                    <legend>Sexo: </legend>
+                    <input type="radio" name="sexo" value="feminino"> Feminino <br>
+                    <input type="radio" name="sexo" value="masculino"> Masculino <br>
+                    <input type="radio" name="sexo" value="outro"> Não informado <br>
+                </fieldset>
+            </div> 
+            
             <br>
+   
+            
+            <hr>
+            <fieldset id="selection">
+                <legend>Gêneros favoritos</legend>
+                <div>
+                    <input type="checkbox" id="hardrock" name="hardrock">
+                    <label for="hardrock">Hard Rock</label>
+                </div> 
+        
+                <div>
+                    <input type="checkbox" id="powermetal" name="powermetal">
+                    <label for="powermetal">Power Metal</label>
+                </div> 
+        
+                <div>
+                    <input type="checkbox" id="metalcore" name="metalcore">
+                    <label for="metalcore">Metal Core</label>
+                </div> 
+        
+                <div>
+                    <input type="checkbox" id="industrial" name="industrial">
+                    <label for="industrial">Industrial Metal</label>
+                </div>         
+                <div>
+                    <input type="checkbox" id="speed" name="speed">
+                    <label for="speed">Speed Metal</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="punk" name="punk">
+                    <label for="punk">Punk Rock</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="death" name="death">
+                    <label for="death">Death Metal</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="symphony" name="symphony">
+                    <label for="symphony">Symphony Metal</label>
+                </div>
+                <br>
+            </fieldset>
+
+            <div>
+                <button type="submit">Finalizar</button>
+            </div>
         </form>
         
         <footer>

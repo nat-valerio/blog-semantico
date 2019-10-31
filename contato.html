@@ -5,10 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contato</title>
+    <style>
+        *{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        form{
+            width: 900px;
+            margin: left;
+            padding: 1em;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+        input, textarea{
+            width: 400px;
+            height: 30px;
+            border-radius: 9px;
+        }
+        textarea{
+            vertical-align: middle;
+            height: 100px;
+        }
+        button{
+            background-color: #6699ff;
+            border: none;
+            margin-left: 350px;
+            padding: 10px 70px;
+            color: snow;
+        }
+        h1, h2{
+            color: #6699ff;  
+        }
+        footer{
+            text-align: center;
+        }
+    
+    </style>
 </head>
 <body>
-        <h1>TELA DE Contato</h1> <br>
+    <h1>Contato</h1>
+    <hr>
+
+    <h2>Canais de atendimento</h2>
+
+    <h3>Telefone</h3>
+    <p>9999-9999</p>
+
+    <h3>Comercial</h3>
+    <p>comercial@rock-station.com</p>
+
+    <h3>Suporte</h3>
+    <p>suporte@rock-station.com</p>        
+        
+    <h3>Recrutamento</h3>
+    <p>recrutamento@rock-station.com</p>
+    <br>
+
+    <h2>Alguma dúvida? Fale conosco!</h2>
+
+        <form action="" method="POST">
+
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" placeholder="Digite a seu nome..." name="senha" required>
+            </div>
+            <div>
+                <label for="usuario">Email: </label>
+                <input type="email" placeholder="Digite o seu email..." name="usuario" required>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagemForm"></textarea>
+            </div>
+
+            <div>
+                <br>
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
+
+
+        <footer>
         <a href="rock-station1.html">Voltar para o site</a>
+        </footer>
     
 </body>
 </html>
